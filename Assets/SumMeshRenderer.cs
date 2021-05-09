@@ -28,8 +28,9 @@ public class SumMeshRenderer : MonoBehaviour
         Debug.Log(totalBounds.size);
 
         Vector3 boundVec = totalBounds.size;
-       
-        transform.localScale = new Vector3(1 / (boundVec.x*2), 1 / (boundVec.x * 2), 1 / (boundVec.x * 2));
+
+        transform.localScale = new Vector3(1 / boundVec.x, 1 / boundVec.x, 1 / boundVec.x);
+        // transform.localScale = new Vector3(1 / (boundVec.x*2), 1 / (boundVec.x * 2), 1 / (boundVec.x * 2));
     }
     // Start is called before the first frame update
     void Start()
